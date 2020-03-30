@@ -1,0 +1,358 @@
+\documentclass[10pt]{article}
+\usepackage[a4paper,bottom = 0.6in,left = 0.75in,right = 0.75in,top = 0.75in]{geometry}
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{array}
+\usepackage{enumitem}
+\usepackage{wrapfig}
+\usepackage{titlesec}
+\usepackage[colorlinks=true,linkcolor=blue,urlcolor=blue]{hyperref}
+\usepackage{amssymb}
+\newcommand{\xfilll}[2][1ex]{
+\dimen0=#2\advance\dimen0 by #1
+\leaders\hrule height \dimen0 depth -#1\hfill}
+\titleformat{\section}{\large\scshape\raggedright}{}{0em}{}
+\renewcommand\labelitemi{\raisebox{0.4ex}{\tiny$\bullet$}}
+\renewcommand{\labelitemii}{$\cdot$}
+\pagenumbering{gobble}
+\def\projectSpace{\vspace{-5pt}}
+\def\projectFirstSpace{\vspace{-18pt}}
+\usepackage{helvet}
+
+\begin{document}
+
+\par{\centering
+        {\Huge  {Yash Khemchanndani}
+    }\bigskip\par}
+%   \vspace{-8mm}
+\par{\centering \diamond \hspace{2pt} \href{https://www.cse.iitb.ac.in/~yashkhem/}{Website}\hspace{8pt}\diamond \hspace{2pt}\href{mailto:yashkhem@iitb.ac.in}{Email} \hspace{8pt}
+\par}
+\vspace*{-5mm}
+\section*{{\LARGE Education}\xfilll[0pt]{0.5pt}}
+\vspace*{-3mm}
+\textbf{Indian Institute of Technology Bombay}   \hfill{\sl \small 2017-2021}\\
+\begin{itemize}[itemsep = -0.75 mm, leftmargin=*]
+\vspace{-6mm}
+ \item Pursuing \textbf{B.Tech with Honors} in Computer Science and Engineering, \emph{CPI: 9.49/10.00}
+ \item Pursuing \textbf{Minor} in Applied Statistics, \emph{CPI: 9.27/10.00}
+\end{itemize}
+\textbf{BVB Vidyashram}  \hfill{\sl \small 2005-2017}\\
+\begin{itemize}[itemsep = -0.75 mm, leftmargin=*]
+\vspace{-6mm}
+ \item CBSE Intermediate/+2, {\emph{Percentage: 97.6 \%}}
+ \item CBSE Matriculation, {\emph{CPI: 10.00 / 10.00 }}
+\end{itemize}
+\vspace{-10pt}
+\section*{\LARGE Papers and Publications \xfilll[0pt]{0.5pt}}
+\vspace{-5pt}
+\begin{itemize}[itemsep = -0.75 mm, leftmargin=*]
+\item Yash Khemchandani, Abdulla Al Suman, Mark Pickering\\
+\textit{Evaluation of U-Net CNN Approaches for Human Neck MRI Segmentation}\\
+\textbf{Paper} submitted to \href{https://miccai2020.org/en/}{International Conference on Medical Image
+Computing \& Computer Assisted Intervention}
+\vspace{-8pt}
+\item Yash Khemchandani, Rahul Mitra, Sharat Chandran\\
+\textit{Pose Classify and Regress - A novel approach to 3D Human Pose Estimation}\hspace{10pt}\href {https://drive.google.com/file/d/1swdAs894Sn3JwkcGxTCyC8UPC-fvRZXD/view?usp=sharing}{[REPORT]} \href {https://drive.google.com/file/d/1Af3Kl8ff8-d9_nzJ7X4wdLtK6BARlNyt/view?usp=sharing}{[SLIDES]}\\
+\textbf{Technical Report} for Research and Development Project
+\end{itemize}
+\vspace{-12pt}
+\section*{\LARGE Research Experience \xfilll[0pt]{0.5pt}}
+\vspace{-7pt}
+\textbf{\large Molecular Generation by Multi-Objective Optimization}\hfill{\sl \small Summer 2019}\\
+  \href{https://en.wikipedia.org/wiki/Douglas_Kell}{Guide: Prof. Douglas Kell}\hfill{\sl \small \href{https://www.liverpool.ac.uk/}{University of Liverpool}}\\\vspace{-15pt}
+\begin{itemize}[itemsep = -0.75 mm, leftmargin=*]
+    \item Designed a model to predict the molecular properties using {\bf Graph Convolutional Neural Networks }
+    \item Implemented {\bf Proximal Policy Optimization} as the {\bf Reinforcement Learning} pathway for generating optimized molecules with a high multi-objective score as predicted by the trained models
+    \item Working on a Research Paper for publication in leading journals of ChemInformatics and Machine Learning
+\end{itemize}
+\textbf{\large MRI Image Segmentation using Deep Neural Networks}\hfill{\sl \small Winter 2019}\\
+   \href{https://research.unsw.edu.au/people/professor-mark-pickering}{Guide: Prof. Mark Pickering}\hfill{\sl \small \href{https://www.unsw.edu.au/}{University of New South Wales}}\\\vspace{-15pt}
+\begin{itemize}[itemsep = -0.75 mm, leftmargin=*]
+    \item Built a Deep Learning pipeline for the segmentation of Neck MRI images of patients suffering from whiplash
+    \item Thoroughly evaluated the results of existing networks based on the \textbf{U-Net} model in this first-of-its-kind study
+    \item Designed novel architectures and pre-processing techniques to get maximum information from the small dataset
+\end{itemize}
+\textbf{\large 3D Human Pose Estimation}\hfill{\sl \small Autumn 2019}\\
+  \href{https://www.cse.iitb.ac.in/~sharat/}{Guide: Prof. Sharat Chandran}\hfill{\sl \small \href{http://www.iitb.ac.in/}{IIT Bombay}}\\\vspace{-15pt}
+\begin{itemize}[itemsep = -0.75 mm, leftmargin=*]
+    \item Did extensive literature survey of the existing techniques on the generalization of 3D Human Pose Estimation
+    \item Implemented a novel hybrid \textbf{Classification-Regression} framework for coarse-to-fine skeletal joint estimation
+    \item Performed rigorous analysis for each bone joint and gathered insights on the working of the Neural Network
+\end{itemize}
+\section*{\LARGE Key Technical Projects\xfilll[0pt]{0.5pt}}
+\projectSpace
+
+\textbf{\large Depth Estimation from Monocular Images} \textemdash \textit{Computer Vision}\hfill{\sl \small Spring 2019}\\
+ \href{http://arjunjain.co.in/}{Guide: Prof. Arjun Jain}\hspace{10pt} \href{https://github.com/yashkhem1/Bokeh-Effect}{[GITHUB]}\hfill{\sl \small \href{http://www.iitb.ac.in/}{IIT Bombay}}\\\vspace{-15pt}
+\begin{itemize}[itemsep = -0.75 mm, leftmargin=*]
+    \item Designed a robust model that produces depth maps from RGB images without the use of dual-lens camera
+    \item Modified the existing generative architectures such as {\bf CycleGAN} and {\bf Pix2Pix} for obtaining better results
+    \item Implemented {\bf Viola Jones Face Detection}  using OpenCV to improve performance on human images
+\end{itemize}
+\textbf{\large Deep Image Deblurring} \textemdash \textit{Image Processing}\hfill{\sl \small Autumn 2019}\\
+ \href{https://www.cse.iitb.ac.in/~ajitvr/}{Guide: Prof. Ajit Rajwade}\hspace{10pt} \href{https://github.com/yashkhem1/Deep_Learning_Deblur}{[GITHUB]}\hspace{3pt}\href{https://drive.google.com/file/d/1ZRUp39NdPTRoYxhhxHoOwtH5GWdQVIBt/view?usp=sharing}{[SLIDES]}\hfill{\sl \small \href{http://www.iitb.ac.in/}{IIT Bombay}}\\\vspace{-15pt}
+\begin{itemize}[itemsep = -0.75 mm, leftmargin=*]
+    \item Implemented a \textbf{Scale Recurrent} architecture for blind deblurring of images captured through a GOPRO.
+    \item Achieved a significantly large \textbf{PSNR} and \textbf{SSIM} result for the test dataset as compared to traditional methods
+\end{itemize}
+\textbf{\large Retinal Blood Vessel Detection} \textemdash \textit{Machine Learning, Image Processing}\hfill{\sl \small Autumn 2019}\\
+ \href{https://www.cse.iitb.ac.in/~ganesh/}{Guide: Prof. Ganesh Ramakrishnan}\hspace{10pt} \href{https://github.com/yashkhem1/STARE}{[GITHUB]}\hspace{3pt}\href{https://drive.google.com/file/d/103Tv4cvvRDuT_cwAA2I3vb0ap6J8kVLY/view?usp=sharing}{[REPORT]}\hfill{\sl \small \href{http://www.iitb.ac.in/}{IIT Bombay}}\\\vspace{-15pt}
+\begin{itemize}[itemsep = -0.75 mm, leftmargin=*]
+    \item Used \textbf{Histogram Equalisation} and \textbf{Gamma Correction} to enhance the blood vessels in retina images.
+    \item Compared traditional Machine Learning techniques such as \textbf{SVMs} against the deep Neural Networks \textbf{SegNets}.
+\end{itemize}
+\newpage
+\hspace{-18pt}
+\textbf{\large Chord Sequence Extraction from Music} \textemdash \textit{Machine Learning, Audio Processing}\hfill{\sl \small Spring 2019}\\
+  \href{http://bbanerjee.netlify.com/} {Guide: Prof. Biplab Banerjee}\hspace{10pt} \href{https://github.com/yashkhem1/Chord-Extraction-using-Machine-Learning}{[GITHUB]}\hspace{3pt}\href{https://docs.google.com/presentation/d/10km5SI1Jw4K8bnWFVvcwYwq3_Bkq11ViB2R3TdQuKAg/edit?usp=sharing}{[SLIDES]}\hfill{\sl \small \href{http://www.iitb.ac.in/}{IIT Bombay}}\\\vspace{-15pt}
+\begin{itemize}[itemsep = -0.75 mm, leftmargin=*]
+    \item Processed the music data to extract $ \mathbb{R}^{12} $ {\bf Pitch Class Profile} vectors using optimized {\bf Fourier Transform}
+    \item Achieved  97\%\ accuracy with Additive $ \chi^{2} $ kernel and SVM Classifier using {\bf Online Learning} for real-time data
+\end{itemize}
+\vspace*{8pt}
+
+\projectSpace
+
+\hspace*{-18 pt}
+ \textbf{\large InstiApp} \textemdash \textit{Open Source Android Development}\hfill{\sl \small Summer 2018}\\
+ \href{https://www.wncc-iitb.org}{Web And Coding Club}\hspace{10pt}\href{https://github.com/wncc/InstiApp}{[GITHUB]}\hspace{3pt}\href{https:/insti.app}{[WEBSITE]}\hspace{3pt}\href{https://play.google.com/store/apps/details?id=app.insti&hl=en_US}{[ANDROID APP]}
+ \hfill{\sl \small \href{http://www.iitb.ac.in/}{IIT Bombay}\\ }
+\vspace{1pt}
+\projectFirstSpace
+\begin{itemize}[itemsep = -0.75 mm, leftmargin=*]
+ %\addtolength{\itemindent}{3mm}
+
+  %\item Devised a {\bf new language} (similar to C++) with basic construct like loops, functions, classes etc.
+
+  \item Part of a team of 10+ developers that designed an {\bf Open Source Android Application} for IIT Bombay
+    \item Implemented a {\bf REST API} client using  Retrofit library in JAVA for retrieval and upload of data from back-end
+    % \item Used  Room and GSON library, provided by Google, to parse JSON data and store it in a {\bf SQLITE} database
+    %\item Used {\bf Picasso} library for easy downloading and caching of images required in the android application
+    \item Maintained the back-end for the app using {\bf Django} and  a Progressive Web Application using {\bf Angular JS}
+%   \item Using {\bf keras} library to implement the same
+
+  %\item Providing a front end interface using Django for user interaction
+\end{itemize}
+\vspace*{8pt}
+
+\projectSpace
+
+\hspace*{-18 pt}
+ \textbf{\large Scholar Finder} \textemdash \textit{Natural Language Processing and Web Scraping}\hfill{\sl \small Ongoing}\\
+ \href{https://www.asimtewari.com}{Guide: Prof. Asim Tewari} \hspace{10pt}\href{https://github.com/yashkhem1/Scholar-Finder}{[GITHUB]} \hfill{\sl \small \href{http://www.iitb.ac.in/}{IIT Bombay}\ \ }\\
+ \vspace{1pt}
+
+\projectFirstSpace
+
+ \begin{itemize}[itemsep = -0.75 mm, leftmargin=*]
+ %\addtolength{\itemindent}{3mm}
+
+   \item Scraped the details of research scholars working on specified research fields using Elsevier Scopus API.
+    \item Designing a Machine Translation based \textbf{Encoder-Decoder Network} to extract keywords out of the abstracts
+  %\item Rendered the board on a 2D interface and added features like undoing previous moves and getting hints
+
+
+ \end{itemize}
+ \vspace*{8pt}
+
+\projectSpace
+
+\hspace*{-18 pt}
+\textbf{\large Secure Personal Cloud} \textemdash \textit{ Cryptography, Web Development} \hfill{\sl \small Autumn 2018}\\
+\href{https://www.cse.iitb.ac.in/~soumen/}{Guide: Prof. Soumen Chakrabarti }\hspace{10pt}\href{https://github.com/yashkhem1/Secure-Personal-Cloud}{[GITHUB]}\hspace{3pt}\href{https://drive.google.com/file/d/1CcG8579Tiep_GSqL0PeUegmRzgruPQU5/view?usp=sharing}{[REPORT]}\hspace{3pt}\href{https://drive.google.com/file/d/1ofUqrwGmyYmDidKF6bzoX-IasWaaSryG/view?usp=sharing}{[SLIDES]}\hfill{\sl \small \href{http://www.iitb.ac.in/}{IIT Bombay}\ \ }\\
+\vspace{1pt}
+
+\projectFirstSpace
+
+ \begin{itemize}[itemsep = -0.75 mm, leftmargin=*]
+
+ \item Developed a Cloud-Based File System for Linux and Mobile Devices with \textbf{ customizable encryption schema}
+\item Applied \textbf{Server Client Modelling} and \textbf{Socket programming} to support multiple clients simultaneously
+% \item Implementing  block-level file encryption on server such that only clients can decrypt their data from server
+% \item Used {\bf React JS} for designing the front-end and {\bf Django} for maintaining the back-end of the application
+\item Implemented \textbf{Periodic Sync} of data between  server and client and \textbf{File Sharing} between two clients
+
+  %Designed a single-player chess engine using {\bf functional programming} in \textit {Racket}
+
+  %\item Used {\bf mini-max algorithm} along with {\bf alpha-beta prunning} to enhance the efficiency of the engine
+
+ %\item Included various {\bf board heuristics} with optimal values to improve the moves of chess engine
+
+  %\item Rendered the board on a 2D interface and added features like undoing previous moves and getting hints
+
+
+\end{itemize}
+\vspace*{8pt}
+
+ \projectSpace
+
+ \hspace*{-18pt}
+\textbf{\large Air Hockey} \textemdash \textit{Artificial Intelligence}\hfill{\sl \small Spring 2018}\\
+\href{https://www.cse.iitb.ac.in/~as/}{Guide: Prof. Amitabha Sanyal }\hspace{3pt}\href{https://github.com/yashkhem1/AirHockey}{[GITHUB]}\hspace{3pt}\href{https://drive.google.com/file/d/1_oCS_022FP37wvZjpinh_OMOUESHx7d1/view?usp=sharing}{[REPORT]}\hfill{\sl \small \href{http://www.iitb.ac.in/}{IIT Bombay}\ \ }\\
+\vspace{1pt}
+
+\projectFirstSpace
+ \begin{itemize}[itemsep = -0.75 mm, leftmargin=*]
+ %\addtolength{\itemindent}{3mm}
+
+\item Developed an {\bf AI} bot in {\bf Racket} Language that plays Air Hockey against the player at different difficulty levels
+% \item Implemented smooth collisions between puck-wall and puck-striker to simulate real gaming experience
+% \item Designed a {\bf velocity and position} based algorithm enabling CPU to attack or defend accordingly
+\item Implemented smooth collisions and calibrated the difficulty settings by playing the bots against each other
+
+\end{itemize}
+\vspace*{-3pt}
+
+\section*{{\LARGE Achievements}\xfilll[0pt]{0.5pt}}
+% \vspace{-7pt}
+
+\vspace*{-5pt}
+\begin{itemize}[itemsep = -0.75 mm, leftmargin=*]
+
+%\item and received a letter of appreciation from Hon'ble {\bf Chief Minister} of Rajasthan for the same  \hfill{\sl \small (2016)}
+\item Awarded an {\bf AP grade} for excellent performance in  {\bf Differential Equations} (top 8 out of 939)\hfill {\sl \small (2018)}
+\item  Achieved {\bf All India Rank 16} in \href{https://en.wikipedia.org/wiki/Joint_Entrance_Examination_Advanced}{\bf JEE Advanced} out of 160,000 candidates\hfill{\sl \small (2017)}
+\item  Secured {\bf All India Rank 269} in \href{https://en.wikipedia.org/wiki/Joint_Entrance_Examination}{\bf JEE Mains} out of 1.5 million candidates\hfill{\sl \small (2017)}
+\item Bagged Gold medal for being among the {\bf top 41} students in \href{https://en.wikipedia.org/wiki/Indian_National_Physics_Olympiad}{\bf INPhO}, Indian National Physics \hfill{\sl \small (2017)} \linebreak
+Olympiad and was selected for Orientation-cum-Selection Camp for \href{https://en.wikipedia.org/wiki/International_Physics_Olympiad}{\bf IPHO}
+\item Secured a position among the {\bf top 35} students in \href{https://en.wikipedia.org/wiki/Indian_National_Astronomy_Olympiad}{\bf INAO}, Indian National Astronomy Olympiad \hfill {\sl \small (2017)}
+\item Ranked among the {\bf top 50} students in \href{https://en.wikipedia.org/wiki/Indian_National_Chemistry_Olympiad}{\bf INChO}, Indian National Chemistry Olympiad \hfill {\sl \small (2017)}
+\item Recipient of the \href{https://en.wikipedia.org/wiki/Kishore_Vaigyanik_Protsahan_Yojana}{\bf Kishore Vaigyanik Protsahan Yojana} fellowship by the Government of India \hfill{\sl \small (2015)}
+\item Awarded the  \href{https://en.wikipedia.org/wiki/National_Talent_Search_Examination}{\bf National Talent Search Examination} fellowship by NCERT, Government of India \hfill{\sl \small (2015)}
+\item Secured {\bf National Rank 1} in \href{http://www.sofworld.org/nso}{\textbf{National Science Olympiad}}, conducted by SOF. \hfill{\sl \small (2015)}
+\end{itemize}
+
+
+
+\vspace{-10pt}
+\section*{\LARGE Other Projects\xfilll[0pt]{0.5pt}}
+\vspace{-7pt}
+$\ast$\href{https://github.com/yashkhem1/KMNIST-SMAC}{\textbf{ Automated Deep Learning}} \textemdash \textit{Self Project} \hfill{\sl \small Summer 2019} \vspace{1pt}\\
+% {\it Guide: Prof. Amitabha Sanyal $|$ Course Project}\hfill{\sl \small IIT Bombay}\vspace{2pt}\\
+- Trained a CNN on KMNIST dataset and implemented {\bf Bayesian Optimization} achieving 95\%\ test accuracy \vspace{5pt}\\
+$\ast$\href{https://github.com/yashkhem1/Panoramic-Image-Stitching}{\textbf{ Panoramic Image Stitching }} \textemdash \textit{ \href{http://arjunjain.co.in/}{Prof. Arjun Jain} }\hfill{\sl \small Spring 2019} \vspace{1pt}\\
+%  {\it Guide: Prof. Asim Tewari}\hfill{\sl \small IIT Bombay}\vspace{2pt}\\
+% \begin{itemize}[itemsep = -0.75 mm, leftmargin=*]
+- Extracted {\bf SURF} feature points and  stitched the images by computing {\bf Homography} matrices between them\vspace{5pt}\\
+% $\ast$\textbf{ Contention Resolution and Switching}\textemdash \textit{Prof. Ashwin Gumaste $|$ Course Project }\hfill{\sl \small Spring 2019} \vspace{1pt}\\
+% - Implemented {\bf ISlip Algorithm} in {\bf VHDL} for moving data packets from one port to another within a router  \vspace{5pt}\\
+$\ast$\href{https://github.com/yashkhem1/Socket-Programming}{\textbf{ Email Application}}\textemdash \textit{\href{https://rnd.iitb.ac.in/faculty/prof-kameswari-chebrolu}{Prof. Kameshwari Chebrolu}}\hfill{\sl \small Spring 2019} \vspace{1pt}\\
+- Designed a  simplified version of {\bf PoP3 email protocol} between multiple clients and a server from scratch  \vspace{5pt}\\
+$\ast$\href{https://github.com/yashkhem1/Movie-Reviewer---Sentiment-Analysis}{ \textbf{  Movie Reviewer } } \textemdash \textit{ \href{https://www.asimtewari.com/}{Prof. Asim Tewari}}\hfill{\sl \small Winter 2018} \vspace{1pt}\\
+%  {\it Guide: Prof. Asim Tewari}\hfill{\sl \small IIT Bombay}\vspace{2pt}\\
+% \begin{itemize}[itemsep = -0.75 mm, leftmargin=*]
+- Built a sentiment-based  movie reviewer using {\bf LSTMs} , achieving 82 \%\ accuracy on Rotten Tomatoes dataset \vspace{5pt}\\
+$\ast$\href{https://github.com/yashkhem1/GitStatus}{\textbf{ GitStatus}}\textemdash \textit{\href{https://www.cse.iitb.ac.in/~soumen/}{Prof. Soumen Chakrabarti} }\hfill{\sl \small Autumn 2018} \vspace{1pt}\\
+- Developed an app using {\bf Android Studio} that displays GitHub repositories of a user along with user details \vspace{5pt}\\
+$\ast$\href{https://github.com/yashkhem1/Encrypted-Chat-Platform}{\textbf{ End to End Encrypted Chat Platform}} \textemdash \textit{ \href{https://www.cse.iitb.ac.in/~as/}{Prof. Amitabha Sanyal} } \hfill{\sl \small Spring 2018} \vspace{1pt} \\
+% {\it Guide: Prof. Amitabha Sanyal $|$ Course Project}\hfill{\sl \small IIT Bombay}\vspace{2pt}\
+- Developed a chat platform for sending messages encrypted using {\bf Hill Cipher} with chat room functionality \vspace{5pt}\\
+% $\ast$ \textbf{\large Line Follower}\textemdash \textit{Electronics and Robotics Club}\hfill{\sl \small Spring 2018} \vspace{1pt}\\
+% - Used IR sensors for detecting white line and implemented {\bf PID algorithm} for smooth motion in correct direction\vspace{5pt}\\
+$\ast$\href{https://github.com/yashkhem1/Abstractions-and-Paradigms-Assignments}{\textbf{ SAT Solver}}\textemdash \textit{\href{https://www.cse.iitb.ac.in/~as/}{Prof. Amitabha Sanyal} }\hfill{\sl \small Spring 2018} \vspace{1pt}\\
+- Implemented a recursive version of {\bf DPLL algorithm} in Lisp language to check satisfiability of a CNF statement\vspace{5pt}\\
+\vspace{-10pt}
+
+
+
+
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%  TECHNICAL SKILLS   %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\vspace*{-5pt}
+\section*{\LARGE Technical Skills\xfilll[0pt]{0.5pt}}
+\vspace{-5pt}
+\begin{tabular}{p{3.5cm} p{13.5cm}}
+  \textbf{Programming} &  C++, C, Python, R, Java, Bash, Arduino, LISP, Prolog\\
+  \textbf{Web Development} & HTML, CSS, PHP, Bootstrap, JavaScript, AngularJS, Django, ReactJS, SQL, Spark \\
+  \textbf{Software} &  MATLAB, Android Studio, Git, \LaTeX\ ,Keras, TensorFlow,PyTorch,OpenCV, AutoCAD, SolidWorks, Xilinx ISE, WireShark, PostgreSQL
+\end{tabular}
+
+\vspace{-5pt}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%  POSITIONS OF RESPONSIBILITY   %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\section*{\LARGE Positions of Responsibility\xfilll[0pt]{0.5pt}}
+\vspace{-5pt}
+
+\vspace*{-3pt}
+%\iffalse % a way of doing block comment
+\textbf{\large Teaching Assistant $|$ CS763+764: Computer Vision + Lab} \hfill{\sl \small December 2019 - Present}\\
+ \href{http://www.math.iitb.ac.in/~sourav/}{ Prof. Sharat Chandran}\hfill{\sl \small IIT Bombay}\\
+\vspace{-18pt}
+\begin{itemize}[itemsep = -0.75 mm, leftmargin=*]
+\item Among the \textbf{few UG students} selected as a Teaching Assistant for Computer Vision, a PG level course
+\item Incharge of \textbf{designing the labs} for the course and making sure that the lab sessions run smoothly
+% \item Mentored the academically struggling students and catered to students course-related queries
+% \item Catering to the students' course-related queries and evaluating their performance in monthly tests
+\end{itemize}
+\textbf{\large Teaching Assistant $|$ MA105: Calculus} \hfill{\sl \small July 2018 - Present}\\
+ \href{https://sites.google.com/view/pal-sourav/home}{ Prof. Sourav Pal}\hfill{\sl \small IIT Bombay}\\
+\vspace{-18pt}
+\begin{itemize}[itemsep = -0.75 mm, leftmargin=*]
+\item Among the {\bf 20 students} selected across all batches for teaching a class of {\bf 51 first-year students}
+\item Coordinated with the Maths Department to conduct {\bf weekly tutorial sessions} and evaluate exam papers
+% \item Mentored the academically struggling students and catered to students course-related queries
+% \item Catering to the students' course-related queries and evaluating their performance in monthly tests
+\end{itemize}
+\vspace{2pt}
+\textbf{\large Coordinator, Competitions \& LYP } \hfill{\sl \small April 2018 - Present}\\
+\href{https://en.wikipedia.org/wiki/Mood_Indigo_(festival)}{ Mood Indigo $|$ Asia's Largest College Cultural Fest} \hfill{\sl \small IIT Bombay}\\
+\vspace{-18pt}
+\begin{itemize}[itemsep = -0.75 mm, leftmargin=*]
+\item Conceptualized several competitions in the field of  Literary and Speaking Arts to be held in Mood Indigo
+% \item Played a part in finalizing the rules and seeking judges for the various competitions taking place
+\item Responsible for finding LYP partners for the  competitions in order to encourage greater participation
+\end{itemize}
+
+\vspace{-3pt}
+
+
+
+%\fi
+% \hspace*{-18 pt}
+\vspace{-5pt}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%  KEY COURSES UNDERTAKEN   %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section*{\LARGE Key Courses Undertaken\xfilll[0pt]{0.5pt}}
+\vspace{-6pt}
+\hspace{-8pt}
+  \begin{tabular}{p{36mm} p{13.2cm}}
+    \textbf{Computer Science} & Abstractions and Paradigms in Programming, Computer Programming and Utilization Computer Networks, Data Structures and Algorithms, Discrete Structures, Data Analysis and Interpretation, Software Systems Lab, Design and Analysis of Algorithms, Digital Logic Design , Logic for Computer Science,    \textbf{Machine Learning for Remote Sensing}, \textbf{Computer Vision}, Operating Systems, Computer Architecture,  \textbf{Artificial Intelligence and Machine Learning}, Digital Image Processing, Database Systems*, Automata Theory*, \textbf{Advanced Machine Learning*},  Implementation of Programming Languages* \\
+    \vspace{0pt}\textbf{Mathematics} & \vspace{0 pt}Calculus, Linear Algebra, Differential Equations, Introduction to Probability Theory, Introduction to Derivative Pricing, Numerical Analysis, Statistical Inference, Regression Analysis* \\
+    \vspace{0pt}\textbf{Others} & \vspace{0 pt}Psychology, Economics, Introduction to Electrical and Electronics Circuits, Quantum Physics and Application, Basics of Electricity and Magnetism, Engineering Graphics and Drawing, Physical Chemistry, Organic and Inorganic Chemistry, Biology\\
+  \end{tabular}
+  \vspace{1pt}\\
+  \hspace*{120mm}{\sl *{\it to be completed by May 2020}}
+\vspace{-10pt}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%  EXTRACURRICULARS   %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section*{\LARGE Extracurriculars\xfilll[0pt]{0.5pt}}
+\vspace{-5pt}
+\begin{itemize}[itemsep = -0.75 mm, leftmargin=*]
+%  \item Awarded { \bf Institute Cultural Freshman of the Year} from among 900+ freshmen for outstandingbf  performance in cultural activities (in the Literary Arts genre). \hfill{\sl \small (2017)}
+%  \item Part of the IIT Bombay's contingent which stood second among all IITs the Inter-IIT Cultural Meet.\hfill{\sl \small (2017)}
+%  \item Won the Business quiz and stood third at the India Quiz Nihilanth, the inter-IIT-IIM quiz fest held at IIM Ahmedabad, playing an instrumental role in IIT Bombay's contingent's third place finish.\hfill{\sl \small (2018)}
+%  \item Stood $6^{th}$ among 200+ teams in the Mumbai Edition of Tata Crucible Campus Quiz.\hfill{\sl \small (2018)}
+%  \item Stood third among 40+ participants in the Lone Wolf Quiz General Championship at IIT Bombay.\hfill{\sl \small (2018)}
+%  \item Underwent one year long training in Yoga under NSO.
+\item Successfully built a {\bf remote-controlled car} in a team of 4 under \href{https://www.tech-iitb.org/erc/events/1/}{\textbf{XLR8}} competition \hfill {\sl \small (2017)}
+\item Part of the Organizing Team in \href{https://en.wikipedia.org/wiki/Mood_Indigo_(festival)}{\bf Mood Indigo} and responsible for organizing  various competitions\hfill {\sl \small (2017)}
+\item Helped in organizing the lectures and travel arrangements for various spokespersons at \href{https://en.wikipedia.org/wiki/Techfest}{\bf TechFest} \hfill {\sl \small (2017)}
+\item Attended the \href{https://en.wikipedia.org/wiki/Vijyoshi_(National_Science_Camp)}{\bf Vijyoshi Camp} which serves as a forum for interactions between bright and young \hfill{\sl \small (2016)} \linebreak students and leading researchers in fields of Science and Mathematics
+\item Stood {\bf first} in the city finals of \href{https://www.time4education.com/Aquaregia/forstudents.htm}{\bf Aqua Regia - The Science Quiz} certified as the largest quiz at one \hfill{\sl \small (2014)} \linebreak location by Guinness Book of World Records
+\item Stood {\bf first} in the city finals  of \href{https://en.wikipedia.org/wiki/Bournvita_Quiz_Contest}{{\bf Bournvita Quiz Contest}} and went to Kolkata for National Finals \hfill {\sl \small (2012)}
+\item Underwent one year long training in Hockey under National Sports Organization \hfill{\sl \small (2017)}
+
+ \end{itemize}
+\vspace{-5pt}
+\section*{\LARGE References\xfilll[0pt]{0.5pt}}
+Available on Request
+
+\end{document}\grid
+
+\grid
